@@ -54,7 +54,6 @@ jobs:
         username: ${{ secrets.USER }}
         password: ${{ secrets.PASSWORD }}
         key: ${{ secrets.SSH_KEY }}
-        passphrase: ${{ secrets.PASSPHRASE }}
         script: |
           sudo docker pull ${{ secrets.DOCKER_USERNAME }}/infra_actions
           sudo docker stop $(sudo docker ps -a -q)
