@@ -52,6 +52,7 @@ jobs:
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USER }}
+        password: ${{ secrets.PASSWORD }}
         key: ${{ secrets.SSH_KEY }}
         script: |
           sudo docker pull ${{ secrets.DOCKER_USERNAME }}/infra_actions:latest
